@@ -7,22 +7,23 @@
 <meta name="description" content="Help with Bandwise, speaking and writing practice for IELTS.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap">
 <style>
-  :root { --paper: #F2F3F5; --ink: #141B2D; --ink2: #444B5C; --ink3: #5C6374; --rule: rgba(20, 27, 45, 0.08); --pen: #2347C5; --mark: #FFE45C; }
+  /* The app's house style (docs/DESIGN.md): a warm stone page, near-black ink, hairline rules, no second colour. */
+  :root { --page: #F8F7F4; --ink: #1A1815; --ink2: #484440; --ink3: #63605B; --rule: rgba(26, 24, 21, 0.09); }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 17px/1.55 Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; -webkit-text-size-adjust: 100%; }
   main { max-width: 40rem; margin: 0 auto; padding-block: 3rem 4rem; padding-inline: 1.25rem; }
-  .brand { font: 600 1.15rem/1 'Source Serif 4', Georgia, serif; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
-  h1 { font: 700 clamp(2rem, 6vw, 2.6rem)/1.15 -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif; letter-spacing: -0.02em; margin: 1.75rem 0 0.75rem; text-wrap: balance; }
-  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2.25rem 0 0.5rem; letter-spacing: -0.01em; }
+  .brand { font-weight: 500; font-size: 1.15rem; line-height: 1; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
+  h1 { font-weight: 500; font-size: clamp(2rem, 6vw, 2.6rem); line-height: 1.15; letter-spacing: -0.03em; margin: 1.75rem 0 0.75rem; text-wrap: balance; }
+  h2 { font-weight: 500; font-size: 1.25rem; line-height: 1.3; margin: 2.5rem 0 0.5rem; letter-spacing: -0.015em; }
   p { margin: 0 0 0.85rem; color: var(--ink2); }
   .lead { font-size: 1.1rem; color: var(--ink); }
-  .updated { font-size: 0.85rem; color: var(--ink3); }
-  .mark { background: linear-gradient(transparent 55%, var(--mark) 55%, var(--mark) 92%, transparent 92%); padding: 0 0.1em; }
-  a { color: var(--pen); text-underline-offset: 0.15em; }
-  dl { margin: 0; }
-  dt { font-weight: 600; margin-top: 1.4rem; }
+  .updated { font: 500 0.75rem/1.35 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--ink3); }
+  a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  dl { margin: 0; border-top: 1px solid var(--rule); }
+  dl > div { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+  dt { font-weight: 500; }
   dd { margin: 0.3rem 0 0; color: var(--ink2); }
   footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 0.85rem; color: var(--ink3); display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
   footer a { color: var(--ink3); }
@@ -31,22 +32,32 @@
 <body>
 <main>
 <a class="brand" href="index.html">bandwise</a>
-<h1>How can we <span class="mark">help</span>?</h1>
+<h1>How can we help?</h1>
 <p class="lead">Bandwise is speaking and writing practice for IELTS: answer the way the test asks, and get an estimated band and the sentences to fix.</p>
 <h2>Contact</h2>
 <p><a href="https://github.com/AbdullaE100/bandwise-app/issues/new">Send us a message</a>. Say which phone you use and what happened; a screenshot helps. We reply within two working days.</p>
 <h2>Common questions</h2>
 <dl>
+<div>
 <dt>Is the band my real score?</dt>
 <dd>No. Every band in Bandwise is an estimate from an AI examiner, marked against the public band descriptors, and it can be half a band or more out either way; the likely range is shown with it. Pronunciation is judged from the recording itself, never from a transcript.</dd>
+</div>
+<div>
 <dt>How do I cancel or change my subscription?</dt>
-<dd>Subscriptions are handled by Apple. On your iPhone, open Settings, tap your name, then Subscriptions, then Bandwise. Cancel at least a day before a renewal or the end of a free trial and you pay nothing more.</dd>
+<dd>Subscriptions are handled by Apple on an iPhone and by Google Play on Android. On an iPhone, open Settings, tap your name, then Subscriptions, then Bandwise. On Android, open Google Play, tap your profile picture, then Payments and subscriptions, then Subscriptions, then Bandwise. Cancel at least a day before a renewal or the end of a free trial and you pay nothing more.</dd>
+</div>
+<div>
 <dt>I subscribed on another phone.</dt>
-<dd>Open the plans in Bandwise and tap Restore. Bandwise Pro follows your Apple ID.</dd>
+<dd>Open the plans in Bandwise and tap Restore. Bandwise Pro follows your Apple ID on an iPhone and your Google account on Android. A plan bought on an iPhone does not carry over to Android, or the other way round.</dd>
+</div>
+<div>
 <dt>An answer was not marked.</dt>
 <dd>It is saved on your phone. Open Today or All answers, tap it, and mark it again. It is not counted until it is marked.</dd>
+</div>
+<div>
 <dt>How do I delete my data?</dt>
 <dd>In Bandwise, open Settings and choose “Delete everything on this phone”. Nothing about you is held on our side; the privacy policy says exactly what is sent and when.</dd>
+</div>
 </dl>
 <footer><a href="index.html">Support</a><a href="privacy.html">Privacy policy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a><span>Practice, not the test. Not affiliated with or endorsed by the British Council, IDP or Cambridge.</span></footer>
 </main>
